@@ -1,21 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
 
-    <title>Frontend Mentor | Tip calculator app</title>
-  </head>
-  <body>
-    Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
-    person Total / person Reset
-  </body>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <main>
+    <section class="section__left">
+      <div>
+        <p>Bill</p>
+        <input type="text" id="billInput" placeholder="0" dir="rtl">
+      </div>
+
+      <div>
+        <p>Select Tip %</p>
+        <div id="btnWrap">
+          <div class="btn-first">
+            <button onclick="tipCalculate(this.innerText)">5%</button>
+          <button onclick="tipCalculate(this.innerText)">10%</button>
+          <button onclick="tipCalculate(this.innerText)">15%</button>
+          </div>
+          <div>
+            <button onclick="tipCalculate(this.innerText)">25%</button>
+          <button onclick="tipCalculate(this.innerText)">50%</button>
+          </div>
+          
+          <!-- <form>
+            <input id="customInput" type="text" placeholder="Custom">
+          </form> -->
+        </div>
+      </div>
+
+
+      <div>
+        <p>Number of People</p>
+        <input type="text" id="peopleInput" placeholder="0" dir="rtl">
+      </div>
+    </section>
+
+    <section class="section__right">
+      <div class="result-wrap">
+        <div class="section__right__result">
+          <div>
+            <p>Tip Amount</p>
+            <p class="per"> / person</p>
+          </div>
+          <input type="text" id="tipResult" placeholder="$0.00" disabled dir="rtl">
+        </div>
+
+        <div class="section__right__result">
+          <div>
+            <p>Total</p>
+            <p class="per"> / person</p>
+          </div>
+          <input type="text" id="totalResult" placeholder="$0.00" disabled dir="rtl">
+        </div>
+      </div>
+
+
+      <button id="resetBtn" onclick="resetValues()">Reset</button>
+    </section>
+
+  </main>
+
+
+
+  <script src="index.js"></script>
+</body>
+
 </html>
