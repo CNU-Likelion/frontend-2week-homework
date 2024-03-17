@@ -1,0 +1,247 @@
+:root {
+  /* 기본색상 */
+  --strong-cyan: hsl(172, 67%, 45%);
+
+ /* 중성색상 */
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --grayish-cyan: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+
+  /* 폰트설정 */
+   --font-family-space-mono: "Space Mono", monospace;
+}
+
+.space-mono {
+  font-family: var(--font-family-space-mono);
+}
+
+.space-mono-regular {
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-bold-italic {
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* 기본셋팅 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-grayish-cyan);
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.title{
+  text-align: center;
+  color: var(--very-dark-cyan);
+  letter-spacing: 10px; /*글자 간격 띄우는 속성*/
+  margin-bottom: 40px;
+}
+
+.calculator{
+  width: 950px;
+  height: 450px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  gap: 20px;
+  padding: 30px;
+  background-color: white;
+  max-width: 75vw;
+  min-width: 60vw;
+}
+
+.calculator-left-setting {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  padding: 10px;
+
+}
+
+.setting-bill{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.calculator-left-setting input {
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 1px 2px
+}
+
+.setting-bill input{
+  background-image: url("../images/icon-dollar.svg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 10px;
+}
+
+/* input [type=number] 스타일 설정 */
+.calculator-left-setting input[type=number]{
+  color: var(--very-dark-cyan);
+  background-color: var(--very-light-grayish-cyan);
+  font-weight: 700;
+  text-align: right;
+  padding: 8px;
+}
+
+.select-tip{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+
+.grid-input button, .grid-input input[type="number"] {
+    width: 100%; /* 그리드 셀에 꽉 차게 설정 */
+    height: 50px; /* 예시로 설정한 높이 */
+}
+
+
+.grid-input {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3열로 설정, 각 열의 비율이 동일하게 */
+    grid-template-rows: repeat(2, 1fr); /* 2행으로 설정, 각 행의 비율이 동일하게 */
+    gap: 10px; /* 셀 사이의 간격 */
+}
+
+
+.selected-percentage {
+  background-color: var(--strong-cyan); /* 사용자가 선택했을 때의 배경색 */
+}
+
+/* 기본 버튼 CSS 설정 */
+.tip-btn {
+  padding: 8px 0;
+  color: white;
+  background-color: var(--very-dark-cyan);
+  cursor: pointer;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.tip-btn:hover {
+  opacity: 0.7; /* 마우스를 올렸을 때 불투명도 설정 */
+}
+
+
+.number-people{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  padding-top: 20px;
+}
+
+
+.number-people .labels{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.warning {
+  display: none; /* 기본적으로 warning을 숨깁니다. */
+  color: red; /* 경고 메시지 색상 */
+}
+
+.warning.show {
+  display: block; /* show 클래스가 추가되면 보여줍니다. */
+}
+
+.number-people-input{
+  background-image: url(../images/icon-person.svg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 10px;
+}
+
+
+/* 오른쪽 영역 */
+.calculator-right-results{
+   flex: 1;
+    background-color: var(--very-dark-cyan);
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.result{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.result-left{
+  display: flex;
+  flex-direction: column;
+  gap:8px;
+}
+
+.result-left h5{
+  color: white;
+}
+
+.result-left h6{
+  color: var(--grayish-cyan);
+}
+
+.result-right h1{
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--strong-cyan);
+}
+
+
+.reset-button {
+    background-color: var(--strong-cyan);
+    color: var(--very-dark-cyan);
+    padding: 8px 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 150px;
+}
