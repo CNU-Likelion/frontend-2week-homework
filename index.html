@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="main__logo">
+        <img src="./images/logo.svg" alt="Logo" class="logo" />
+      </section>
+
+      <section class="main__section">
+        <article class="main__section_input">
+          <label for="">Bill</label>
+          <input class="input_bill" id="bill-input" type="number" />
+
+          <label for="">Select Tip %</label>
+          <div class="input_selectTIP">
+            <div class="input_selectTIPS tip-5">5%</div>
+            <div class="input_selectTIPS tip-10">10%</div>
+            <div class="input_selectTIPS tip-15">15%</div>
+            <div class="input_selectTIPS tip-25">25%</div>
+            <div class="input_selectTIPS tip-50">50%</div>
+            <div class="input_selectTIP_tip-custom">
+              <input class="tip-custom" type="number" placeholder="Custom" />
+            </div>
+          </div>
+
+          <label for="">Number of People</label>
+          <input class="input_numOFpeople" type="number" />
+        </article>
+
+        <article class="main__section_output">
+          <div class="output_tipAMOUNT">
+            <div class="tipAMOUNT title">
+              <p>Tip Amount</p>
+              <p class="output_person">/ person</p>
+            </div>
+            <div class="ouput_amount" id="output-tip">$0.00</div>
+          </div>
+
+          <div class="output_total">
+            <div class="total title">
+              <p>Total</p>
+              <p class="output_person">/ person</p>
+            </div>
+            <div class="ouput_amount" id="output-total">$0.00</div>
+          </div>
+
+          <div class="output_reset">RESET</div>
+        </article>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
