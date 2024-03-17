@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="index.css" />
 
     <link
       rel="icon"
@@ -12,10 +13,61 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
     <title>Frontend Mentor | Tip calculator app</title>
   </head>
   <body>
-    Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
-    person Total / person Reset
+
+    <picture class="title"><img src="../images/logo.svg"></picture>
+
+    <section class="container">
+      <section class="container__item1">
+        <p>Bill</p>
+
+        <input type="text1" class="item1__bill" style="text-align:right" placeholder="0" onfocus="this.placeholder=''" onblur="this.placeholder='0'"/>
+
+        <section class="container__tip">
+
+          <p>Select Tip %</p>
+
+          <div class="container__tip__menu1">
+            <button class="tip__bar" onclick>5%</button>
+            <button class="tip__bar">10%</button>
+            <button class="tip__bar">15%</button>
+          </div>
+          
+          <div class="container__tip__menu2">
+            <button class="tip__bar">20%</button>
+            <button class="tip__bar">25%</button>
+            <input type="text3" class="tip__bar__custom" onkeyup='custom()' placeholder="Custom" onfocus="this.placeholder=''" onblur="this.placeholder='Custom'"/>
+
+          </div>
+
+        </section>
+        
+        <p>Number of People</p>
+        <input type="text2" class="item1__people" onkeyup='peoples()' style="text-align:right" placeholder="0" onfocus="this.placeholder=''" onblur="this.placeholder='0'">
+      </section>
+
+      
+      <section class="container__item2">
+        <section class="container__item2__tip">
+          <section class="tip__title">Tip Amount<br><p class="divide">/ person</p></section>
+          <div class="tip__element"><div class="tip__icon">$</div><div class="tip__output">0.00</div></div>
+        </section>
+
+        <section class="container__item2__total">
+          <section class="total__title">Total <br><p class="divide">/ person</p></section>
+          <div class="total__element"><div class="total__icon">$</div><div class="total__output">0.00</div></div>
+        </section>
+        
+        <div class="container__item2__reset" onclick="reset()">RESET</div>
+      </section>
+
+    </section>
+    <script src="index.js"></script>
   </body>
 </html>

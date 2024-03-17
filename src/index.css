@@ -1,0 +1,225 @@
+body{
+    background-color:hsl(185, 41%, 84%);
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.title{
+    margin-top:150px;
+    margin-bottom:100px;
+    display:flex;
+    justify-content: center;
+}
+
+.container{
+    position:absolute;
+    left:20%;
+    width:60%;
+    height:60%;
+    display:flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.container__item1{
+    color:hsl(186, 14%, 43%);
+    width:50%;
+    margin-top:30px;
+    margin-left:50px;
+}
+
+.container__item2{
+    background-color: hsl(183, 100%, 15%);
+    color:white;
+    width:50%;
+    height:80%;
+    margin-top:60px;
+    margin-right:50px;
+    margin-left:20px;
+    border-radius: 20px;
+}
+
+
+
+.bill_icon{
+    position: relative;
+    left:20px;
+}
+
+.container__tip{
+    width:100%;
+    height:20%;
+    display:flex;
+    flex-direction: column;
+    margin-bottom:120px;
+    margin-top:30px;
+}
+
+.container__tip__menu1{
+    display:flex;
+    justify-content: space-evenly;
+    width:80%;
+    height:50%;
+    margin-bottom:10px;
+}
+
+.container__tip__menu2{
+    display:flex;
+    justify-content: space-evenly;
+    width:80%;
+    height:50%;
+}
+
+.tip__bar{
+    font-family: "Space Mono", monospace;
+    font-size:20px;
+    font-weight: bold;
+    width:30%;
+    background-color:  hsl(183, 100%, 15%);
+    border-radius: 5px;
+    text-align: center;
+    line-height:47.25px;
+    color:white;
+}
+
+.tip__bar__custom{
+    font-family: "Space Mono", monospace;
+    font-size:20px;
+    font-weight: bold;
+    width:30%;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 5px;
+    text-align: center;
+    line-height:47.25px;
+    color:hsl(183, 100%, 15%);
+    border: hsl(189, 41%, 97%);
+}
+
+
+.container__item1__person{
+    background-color: hsl(189, 41%, 97%);
+    width: 80%;
+    border-radius: 5px;
+    height:10%;
+    line-height:50px;    
+}
+
+input[type="text1"]{
+    font-family: "Space Mono", monospace;
+    background-image: url("../images/icon-dollar.svg");
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 5%;
+    background-color: hsl(189, 41%, 97%);
+    width: 80%;
+    border-radius: 5px;
+    height:10%;
+}
+
+.item1__bill{
+    font-size:23px;
+    color:hsl(183, 100%, 15%);
+    font-weight: bold;
+}
+
+
+
+input[type="text2"]{
+    font-family: "Space Mono", monospace;
+    background-image: url("../images/icon-person.svg");
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: 5%;
+    background-color: hsl(189, 41%, 97%);
+    width: 80%;
+    border-radius: 5px;
+    height:10%;
+}
+
+
+.item1__people{
+    font-size:23px;
+    color:hsl(183, 100%, 15%);
+    font-weight: bold;
+}
+
+.container__item2__tip{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top:40px;
+}
+
+.container__item2__total{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+
+
+.tip__element{
+    display:flex;
+    width:30%;
+    font-size: 40px;
+    /* text-align: right; */
+    color:hsl(172, 67%, 45%);
+}
+
+.tip__icon{
+    line-height: 69px;
+}
+
+.tip__output{
+    width:25%;
+    line-height: 69px;
+    text-align:right;
+}
+
+.total__element{
+    /* text-align: right; */
+    display:flex;
+    width:30%;
+    font-size: 40px;
+    color:hsl(172, 67%, 45%);
+}
+
+.total__icon{
+    line-height: 69px;
+}
+
+.total__output{
+    width:25%;
+    line-height: 69px;
+    text-align:right;
+}
+
+
+.tip__title{
+    width:40%;
+    font-size:15px;
+}
+
+.total__title{
+    width:40%;
+    font-size: 15px;
+}
+
+.divide{
+    color:hsl(184, 14%, 56%);
+}
+
+.container__item2__reset{
+    background-color:hsl(172, 67%, 45%);
+    color:black;
+    opacity: 0.2;
+    width:70%;
+    height:12%;
+    margin-left:77px;
+    border-radius: 5px;
+    line-height:54px;
+    text-align: center;
+    font-weight: bold;
+    font-size:28px;
+    margin-top:30%;
+}
