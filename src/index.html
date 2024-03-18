@@ -30,39 +30,40 @@
           <div id="leftSection_Container">
           <div class="leftBox">
             <p>Bill</p>
-            <input type="text" placeholder="$" class="left_Input">
-          </div>
+            <input type="number" placeholder="$" class="left_Input" id="Bill">
 
           <div class="leftBox">
             <p>Select Tip %</p>
-            <button class="percentBox">5%</button>
-            <button class="percentBox">15%</button>
-            <button class="percentBox">20%</button>
-            <button class="percentBox">25%</button>
-            <button class="percentBox">50%</button>
-            <input type="text" class="percentBox">
+            <button class="percentBox" id="fiveBtn">5%</button>
+            <button class="percentBox" id="tenBtn">10%</button>
+            <button class="percentBox" id="tenfiveBtn">15%</button>
+            <button class="percentBox" id="twentyfiveBtn">25%</button>
+            <button class="percentBox" id="fiftyBtn">50%</button>
+            <input type="number" class="percentBox" id="UserInput">
           </div>
 
           <div class="leftBox">
             <p>Number of People</p>
             <p id="bottom_text">Can't be zero</p>
-            <input type="text" class="left_Input" id="num_Input">
+            <input type="text" class="left_Input" id="peopleNum">
           </div>
         </div>
         </section>
 
         <section id="rightSection">
           <div id="rightSection_Box">
-            <div id="tip">
+            <div id="tipContainer">
               <p class="text1">Tip Amount</p>
               <p class="text2">/ person</p>
+              <p id="tip" class="text3">$0.00</p>
             </div>
 
           </div>
           <div>
-            <div id="total">
+            <div id="totalContainer">
               <p class="text1">Total</p>
               <p class="text2">/ person</p>
+              <p class="text3" id="total">$0.00</p>
             </div>
             <p></p>
           </div>
