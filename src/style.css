@@ -1,0 +1,170 @@
+* {
+    width: 1440px;
+    Font size : 24px;
+}
+  
+body {
+    background-color:  hsl(185, 41%, 84%);
+    font-weight: 700;
+    width: 1440px;
+}
+
+#leftSection_Container {
+    position: relative;
+
+}
+
+#leftSection_Container p {
+    color: hsl(186, 14%, 43%);
+    width: 500px;
+    margin: 0 0 10px 0;
+}
+
+header {text-align: center;
+margin-top: 150px;
+margin-bottom: 80px;
+font-size: 24px;}
+
+#titleText {
+    color: hsl(186, 14%, 43%);
+}
+
+main {
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 15px;
+    width: 940px;
+    height: 450px;
+    margin: 0 auto; /*상하는 0, 좌우는 자동으로 가운데 정렬됨*/
+}
+
+#leftSection {
+    width: 500px;
+    display: flex;
+    margin-left: 40px;
+}
+
+.leftBox {
+    width: 450px;
+    margin-top: 38px;
+}
+
+#percentContainer {
+    background-color: brown;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+}
+
+.percentBox {
+    width: 127px;
+    height: 45px;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 1000;
+    color: white;
+    background-color: hsl(183, 100%, 15%);
+}
+
+input.percentBox {
+    width: 120px;
+    height: 41px;
+}
+
+#bottom_text {
+    position: relative;
+    left: 285px;
+    bottom: 30px;
+}
+
+.left_Input {
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    border-color: hsl(172, 67%, 45%);
+    background-color: hsl(189, 41%, 97%);
+    font-size: 20px;
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+}
+
+#peopleNum {
+    position: relative;
+    bottom: 25px;
+}
+
+#rightSection {
+    position: relative;
+    left: 510px;
+    bottom: 400px;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 15px;
+    width: 400px;
+    height: 390px;
+}
+
+.rightSection_Box {
+    position: absolute;
+    height: 70%;
+    background-color: hsl(183, 93%, 40%);
+    border-radius: 5px;
+    width: 400px;
+}
+
+#tipContainer {
+    position: relative;
+    top: 60px;
+    left: 50px;
+}
+
+#tip {
+    position: relative;
+    bottom: 65px;
+    left: 180px
+}
+
+#totalContainer {
+    position: relative;
+    top: 15px;
+    left: 50px;
+}
+
+#total {
+    position: relative;
+    bottom: 65px;
+    left: 180px
+}
+
+.text1{
+    color: white;
+    margin: 0;
+}
+
+.text2 {
+    color: hsl(184, 14%, 56%);
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.text3 {
+    color: hsl(172, 67%, 45%);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#reset {
+    border-radius: 5px;
+    height: 50px;
+    position: relative;
+    top: 50px;
+    left: 37px;
+    width: 329px;
+    font-size: 20px;
+    font-weight: 700;
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 45%);
+}
+
+button:hover {cursor: pointer;}
