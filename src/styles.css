@@ -1,0 +1,195 @@
+* {
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+    --deep-cyan: hsl(183, 100%, 15%);
+    --dark-cyanish-gray: hsl(186, 14%, 43%);
+    --cyanish-gray: hsl(184, 14%, 56%);
+    --light-cyanish-gray: hsl(185, 41%, 84%);
+    --very-light-cyanish-gray: hsl(189, 41%, 97%);
+    --pure-white: hsl(0, 0%, 100%);
+    --vivid-cyan: hsl(172, 67%, 45%);
+  }
+  
+  body {
+    background-color: var(--light-cyanish-gray);
+  }
+  
+  .label {
+    color: var(--dark-cyanish-gray);
+  }
+  
+  input {
+    color: var(--deep-cyan);
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    caret-color: var(--vivid-cyan);
+    text-align: right;
+    height: 40px;
+  }
+  
+  input:focus {
+    outline: solid 1px var(--vivid-cyan);
+  }
+  
+  header {
+    margin: 10% 0 5% 0;
+  }
+  
+  .branding {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  main {
+    display: flex;
+    background-color: var(--pure-white);
+    padding: 30px;
+    max-width: 900px;
+    border-radius: 30px;
+    margin: 0 auto;
+    gap: 20px;
+  }
+  
+  .input-section {
+    flex: 0.5;
+    padding: 10px;
+  }
+  
+  .output-section {
+    flex: 0.5;
+    display: flex;
+    background-color: var(--deep-cyan);
+    border-radius: 10px;
+    padding: 40px 30px;
+    flex-direction: column;
+  }
+  
+  .expense__field {
+    background: url('../assets/icons/icon-dollar.svg') no-repeat center left 15px;
+    background-color: var(--very-light-cyanish-gray);
+    margin-top: 10px;
+    font-size: 22px;
+  }
+  
+  .gratuity {
+    margin-top: 10%;
+  }
+  
+  .gratuity__options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 10px;
+    margin-top: 10px;
+  }
+
+  .per-person-label {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .gratuity__option {
+    background-color: var(--deep-cyan);
+    color: var(--pure-white);
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.2s;
+    flex: 1 1 30%;
+  }
+  
+  .gratuity__option:hover {
+    background-color: var(--light-cyanish-gray);
+    color: var(--deep-cyan);
+  }
+  
+  .gratuity__custom {
+    padding: 0 15px;
+    height: 40px;
+    font-size: 18px;
+    text-align: right;
+    background-color: var(--very-light-cyanish-gray);
+    color: var(--deep-cyan);
+  }
+  
+  .gratuity__custom:focus {
+    outline: solid 1px var(--vivid-cyan);
+  }
+  
+  .participants {
+    margin-top: 10%;
+  }
+
+  .label-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .participants__error {
+    color: hsl(0, 100%, 74%);
+    float: right;
+    display: none;
+  }
+  
+  .participants__field {
+    background: url('../assets/icons/icon-person.svg') no-repeat center left 15px;
+    background-color: var(--very-light-cyanish-gray);
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  .participants__field.error {
+    border: solid 2px hsl(0, 100%, 74%);
+  }
+  
+  .gratuity-person, .total-person {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    color: var(--pure-white);
+  }
+  
+  .gratuity-person__value, .total-person__value {
+    font-size: 36px;
+    color: var(--vivid-cyan);
+  }
+  
+  .clear {
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    transition: all 0.2s;
+    margin-top: 10%;
+    font-size: 18px;
+    margin-top: auto;
+  }
+  
+  .clear.active {
+    background-color: var(--vivid-cyan);
+    color: var(--pure-white);
+    cursor: pointer;
+  }
+  
+  .clear.active:hover {
+    background-color: var(--light-cyanish-gray);
+  }
+
+  .gratuity__option.active {
+    background-color: var(--vivid-cyan); /* 활성 상태 버튼의 배경 색상 변경 */
+    color: var(--deep-cyan); /* 활성 상태 버튼의 텍스트 색상 변경, 필요에 따라 조정 */
+  }
+  
+ 
