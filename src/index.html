@@ -1,21 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tip Calculator | Interactive</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img class="branding" src="../images/logo.svg" alt="brand-logo">
+    </header>
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+    <main>
+        <div class="input-section">
+            <!-- Expense -->
+            <div class="expense">
+                <label class="expense__label label">Bill</label>
+                <input class="expense__field" type="number" placeholder="0">
+            </div>
+            <!-- Gratuity -->
+            <div class="gratuity">
+                <label class="gratuity__label label">Select Tip %</label>
+                <div class="gratuity__options">
+                    <button class="gratuity__option" data-value="5">5%</button>
+                    <button class="gratuity__option" data-value="10">10%</button>
+                    <button class="gratuity__option" data-value="15">15%</button>
+                    <button class="gratuity__option" data-value="25">25%</button>
+                    <button class="gratuity__option" data-value="50">50%</button>
+                    <input class="gratuity__custom" type="number" placeholder="Custom">
+                </div>
+            </div>
+            <!-- Participants -->
+            <div class="participants">
+                <label class="participants__label label">
+                    Party Size
+                    <span class="participants__error">Must be more than zero</span>
+                </label>
+                <input class="participants__field" type="number" value="1">
+            </div>
+        </div>
 
-    <title>Frontend Mentor | Tip calculator app</title>
-  </head>
-  <body>
-    Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
-    person Total / person Reset
-  </body>
+        <div class="output-section">
+            <!-- Gratuity Per Person -->
+            <div class="gratuity-person">
+                <div class="gratuity-person__label">
+                  <div class="label-container">
+                    <label>Tip Amount</label>
+                    <label class="per-person-label">/ person</label>
+                  </div>
+                </div>
+                <p class="gratuity-person__value">$0.00</p>
+            </div>
+            <!-- Total Per Person -->
+            <div class="total-person">
+                <div class="total-person__label">
+                  <div class="label-container">
+                    <label>Total</label>
+                    <label class="per-person-label">/ person</label>
+                  </div>
+                </div>
+                <p class="total-person__value">$0.00</p>
+            </div>
+            <!-- Clear -->
+            <button class="clear" disabled>CLEAR</button>
+        </div>
+    </main>
+</body>
 </html>
