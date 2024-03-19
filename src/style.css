@@ -1,0 +1,167 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: "Space Mono", "Courier New", monospace;
+  font-weight: 700;
+  background-color: hsl(185, 41%, 84%);
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo-container {
+  margin-top: 7%;
+  margin-bottom: 5%;
+}
+
+.logo {
+  color: hsl(183, 100%, 15%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  padding: 3%;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+}
+
+.container-input {
+  width: 50%;
+}
+
+/* Bill */
+
+.container-input-bill {
+  margin-bottom: 7%;
+  color: hsl(186, 14%, 43%);
+}
+
+.bill-input {
+  width: 90%;
+  text-align: right;
+  border: 0px;
+  padding: 10px;
+  background-color: hsl(189, 41%, 97%);
+  border-radius: 3px;
+  margin-top: 7px;
+  font-family: "Space Mono", "Courier New", monospace;
+  font-weight: 700;
+}
+
+.bill-input:hover, .bill-input:focus {
+  outline: 2px solid #72BCB3;
+}
+
+/* Select Tip */
+
+.container-input-select {
+  margin-bottom: 7%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 95%;
+}
+
+.select-title {
+  color: hsl(186, 14%, 43%);
+}
+
+.button, .select-input {
+  margin: 5px 10px 5px 0px;
+  padding: 5px;
+  font-family: "Space Mono", "Courier New", monospace;
+  font-weight: 700;
+  border-radius: 3px;
+  border: none;
+  text-align: center;
+}
+
+.button {
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+}
+
+.button:hover {
+  background-color: #9FE8DF;
+  color: hsl(183, 100%, 15%);
+}
+
+.select-input {
+  background-color: hsl(189, 41%, 97%);
+  text-align: right;
+}
+
+.select-input:hover, .select-input:focus {
+  outline: 2px solid #72BCB3;
+}
+
+/* Number of People */
+
+.container-input-people {
+  color: hsl(186, 14%, 43%);
+}
+
+.people-input {
+  width: 90%;
+  text-align: right;
+  border: 0px;
+  background-color: hsl(189, 41%, 97%);
+  padding: 10px;
+  border-radius: 3px;
+  margin-top: 7px;
+  font-family: "Space Mono", "Courier New", monospace;
+  font-weight: 700;
+}
+
+.people-input:hover, .people-input:focus {
+  outline: 2px solid #B58372;
+}
+
+/* right */
+
+.container-display {
+  width: 50%;
+  height: 100%;
+  margin-left: 5%;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 7px;
+  color: #6AA2A7;
+  padding: 3%;
+}
+
+.container-display > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  margin: 1rem 0px;
+}
+
+
+.display-explain {
+  color: #F2FFFF;
+}
+
+.display-amount-total, .display-amount-tip {
+  color: #24C6AB;
+  font-size: 2rem;
+}
+
+.container-button {
+  margin-top: auto 0 0 auto;
+  font-family: "Space Mono", "Courier New", monospace;
+  font-weight: 700;
+  background-color: #9FE8DF;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 7px;
+  color: hsl(183, 100%, 15%);
+}

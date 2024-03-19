@@ -11,11 +11,79 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
     <title>Frontend Mentor | Tip calculator app</title>
   </head>
   <body>
-    Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
-    person Total / person Reset
+    <!-- Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
+    person Total / person Reset -->
+    <div class="logo-container">
+      <h2 class="logo">S P L I</h2>
+      <h2 class="logo">T T E R</h2>
+    </div>
+
+    <section class="container">
+      <article class="container-input">
+        <form action="" class="container-input-bill">
+          <p>Bill</p>
+          <input 
+            type="text" 
+            class="bill-input" 
+            placeholder="0"
+          />
+        </form>
+
+        <p class="select-title">Select Tip %</p>
+        <form action="" class="container-input-select">
+          <button class="button 5">5%</button>
+          <button class="button 10">10%</button>
+          <button class="button 15">15%</button>
+          <button class="button 25">25%</button>
+          <button class="button 50">50%</button>
+          <input 
+            type="text" 
+            class="select-input"
+            placeholder="custom"
+          />
+        </form>
+
+        <form action="" class="container-input-people">
+          <p>Number of People</p>
+          <input 
+            type="text" 
+            class="people-input"
+            placeholder="0"
+          />
+        </form>
+      </article>
+
+      <article class="container-display">
+
+        <div class="display-total">
+          <div class="display-tip">
+            <p class="display-explain">Tip Amount</p>
+            <p>/ person</p>
+          </div>
+          <div class="display-amount-tip">$0.00</div>
+        </div>
+        
+        <div class="display-total">
+          <div class="display-total">
+            <p class="display-explain">Total</p>
+            <p>/ person</p>
+          </div>
+          <div class="display-amount-total">$0.00</div>
+        </div>
+        <button class="container-button">RESET</button>
+
+      </article>
+    </section>
+
+    <script src="index.js"></script>
   </body>
 </html>
