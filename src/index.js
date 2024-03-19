@@ -13,8 +13,9 @@ let tipAmount = 0;
 let total = 0;
 
 billInput.addEventListener("change", function() {
-  billTotal = parseFloat(billInput);
+  billTotal = parseFloat(billInput.value);
 })
+
 peopleInput.addEventListener("change", function() {
   people = parseFloat(peopleInput.value);
   output();
@@ -23,15 +24,13 @@ peopleInput.addEventListener("change", function() {
 let percent = 0;
 
 buttons.forEach((btn) => {
-  btn.addEventListener("click", function() {
+  btn.addEventListener("click", function(e) {
+    e.preventDefault();
     percent = parseFloat(btn.textContent);
   })
 })
 
 function output() {
-  console.log(billTotal);
-  console.log(people);
-  console.log(percent);
   tipAmount = (billTotal * (percent/100)) / people;
   total = (billTotal + tipAmount) / people;
   showTip.innerHTML = "$" + tipAmount.toFixed(2);
